@@ -26,4 +26,3 @@ end
 at_exit do
   browser.quit
 end
-

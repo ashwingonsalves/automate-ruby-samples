@@ -1,16 +1,13 @@
-A sample project to run tests over BrowserStack Automate using Capybara.
+A sample project to run tests over BrowserStack Automate using Cucumber.
 
 To run the tests, execute:
 
-```bash
-cucumber BS_USERNAME=<username> BS_AUTHKEY=<access-key> SELENIUM_PLATFORM=<platform> SELENIUM_BROWSER=<browser-name>
-```
-or
-```bash
-cucumber BS_USERNAME=<username> BS_AUTHKEY=<access-key> BS_AUTOMATE_OS=<os> BS_AUTOMATE_OS_VERSION=<os-version> SELENIUM_BROWSER=<browser-name>
-```
+#Install the following gems
+gem install cucumber
+gem install selenium-webdriver
+gem install rspec
 
-Examples:
+#Run this command
 ```bash
 cucumber BS_USERNAME=<username> BS_AUTHKEY=<access-key> SELENIUM_PLATFORM=WINDOWS SELENIUM_BROWSER=chrome
 ```
@@ -18,6 +15,5 @@ or
 ```bash
 cucumber BS_USERNAME=<username> BS_AUTHKEY=<access-key> BS_AUTOMATE_OS="OS X" BS_AUTOMATE_OS_VERSION="Mountain Lion" SELENIUM_BROWSER="chrome"
 ```
-
 Alternatively the variables can be set in the environment using env or your CI framework (like Travis or Jenkins)
 
